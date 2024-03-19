@@ -1,0 +1,112 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date-time-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+        }
+        
+        .date-time-input input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 0px;
+            
+        }
+
+        
+        .date-time-input button {
+            margin-left: 10px;
+            padding: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .date-time-input button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .limpaCampo {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .limpaCampo:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+ 
+
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+            }
+
+            .date-time-input {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .date-time-input input[type="text"] {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .date-time-input button {
+                margin-top: 10px;
+            }
+        }
