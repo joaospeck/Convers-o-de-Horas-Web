@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Diferença de Tempo</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" media="screen" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Diferença de Tempo</h1>
+        <form id="calcForm">
+            <div id="datesContainer">
+                <div class="date-time-input">
+                    <label>Data e hora de Inicio (DD:MM:YYYY HH:MM)
+                        <input type="text" class="dataInicio" required>
+                     </label>
+                    <label>Data e hora de Fim (DD:MM:YYYY HH:MM)
+                        <input type="text" class="dataFim" required>
+                    </label>
+                        <button type="button" onclick="adicionarDataHora()">Adicionar Data e Hora</button>
+                        <button type="button" onclick="removerTodasDataHora()">Remover todos exceto a primeira</button>
+                </div>
+        
+            </div>
+            <input type="submit" value="Calcular">
+        </form>
+        <br>
+        <center><button type="button" class="limpaCampo" onclick="limparCampos()">Limpar Campos</button></center> <!-- Botão para limpar campos -->
+        <div id="resultado"></div>
+    </div>
+
+   <script src="/static/scripts.js"></script>
+</body>
+</html>
